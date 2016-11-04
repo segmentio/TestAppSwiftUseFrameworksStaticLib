@@ -13,6 +13,8 @@
 		EAB38ABA1DCC0B5A003D3DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB38AB81DCC0B5A003D3DE5 /* Main.storyboard */; };
 		EAB38ABC1DCC0B5A003D3DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB38ABB1DCC0B5A003D3DE5 /* Assets.xcassets */; };
 		EAB38ABF1DCC0B5A003D3DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB38ABD1DCC0B5A003D3DE5 /* LaunchScreen.storyboard */; };
+		EAB38ACB1DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB38AC71DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.m */; };
+		EAB38ACC1DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB38AC81DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,11 @@
 		EAB38ABB1DCC0B5A003D3DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAB38ABE1DCC0B5A003D3DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB38AC01DCC0B5A003D3DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB38AC61DCC0D44003D3DE5 /* TestAppSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAppSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAB38AC71DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGGoogleAnalyticsIntegration.m; sourceTree = "<group>"; };
+		EAB38AC81DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGGoogleAnalyticsIntegrationFactory.m; sourceTree = "<group>"; };
+		EAB38AC91DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGGoogleAnalyticsIntegration.h; sourceTree = "<group>"; };
+		EAB38ACA1DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGGoogleAnalyticsIntegrationFactory.h; sourceTree = "<group>"; };
 		FDDF09B4F3BB03961D771C80 /* Pods-TestAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppSwift/Pods-TestAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,12 +76,17 @@
 		EAB38AB31DCC0B5A003D3DE5 /* TestAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				EAB38AC71DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.m */,
+				EAB38AC81DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.m */,
+				EAB38AC91DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.h */,
+				EAB38ACA1DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.h */,
 				EAB38AB41DCC0B5A003D3DE5 /* AppDelegate.swift */,
 				EAB38AB61DCC0B5A003D3DE5 /* ViewController.swift */,
 				EAB38AB81DCC0B5A003D3DE5 /* Main.storyboard */,
 				EAB38ABB1DCC0B5A003D3DE5 /* Assets.xcassets */,
 				EAB38ABD1DCC0B5A003D3DE5 /* LaunchScreen.storyboard */,
 				EAB38AC01DCC0B5A003D3DE5 /* Info.plist */,
+				EAB38AC61DCC0D44003D3DE5 /* TestAppSwift-Bridging-Header.h */,
 			);
 			path = TestAppSwift;
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 				TargetAttributes = {
 					EAB38AB01DCC0B5A003D3DE5 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB38ACB1DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegration.m in Sources */,
+				EAB38ACC1DCC0D44003D3DE5 /* SEGGoogleAnalyticsIntegrationFactory.m in Sources */,
 				EAB38AB71DCC0B5A003D3DE5 /* ViewController.swift in Sources */,
 				EAB38AB51DCC0B5A003D3DE5 /* AppDelegate.swift in Sources */,
 			);
@@ -334,10 +349,13 @@
 			baseConfigurationReference = FDDF09B4F3BB03961D771C80 /* Pods-TestAppSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestAppSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.segment.TestAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestAppSwift/TestAppSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -347,10 +365,12 @@
 			baseConfigurationReference = 775F285E8C21AD229A2CF6BE /* Pods-TestAppSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestAppSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.segment.TestAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestAppSwift/TestAppSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

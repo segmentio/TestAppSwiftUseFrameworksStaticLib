@@ -18,14 +18,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Segment-GoogleAnalytics:
-    :commit: 949be69bed37593515b2a80c1621dea6c6b8a894
+    :commit: f5f42037e957cb9ab42ed97c5ee179af7460dea8
     :git: https://github.com/segment-integrations/analytics-ios-integration-google-analytics.git
 
 SPEC CHECKSUMS:
   Analytics: 0bf6c9302dcde2bdd9fc410ef2685ad8a1c804dd
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleIDFASupport: aaf8c10bd429abb1c15349d5252244f5eda8ead1
-  Segment-GoogleAnalytics: bfc1df1cda4439e17d539f02c27c4fb44dda2cea
+  Segment-GoogleAnalytics: 566a4e09d7707590e450d7a1bd09eeeaecca657c
 
 PODFILE CHECKSUM: 98fab23f720058c1983ecdc7631602bf5660ec9c
 

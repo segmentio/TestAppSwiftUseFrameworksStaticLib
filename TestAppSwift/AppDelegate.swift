@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Analytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let config = SEGAnalyticsConfiguration(writeKey: "ACIG3kwqCUsWZBfYxZDu0anuGwP3XtWW")
+
+        config?.use(SEGGoogleAnalyticsIntegrationFactory.instance())
+        SEGAnalytics.setup(with: config)
+        SEGAnalytics.shared().track("Test Google Analytics Swift")
+        SEGAnalytics.shared().flush()
+//        SEGAnalyticsConfiguration *config = [SEGAnalyticsConfiguration configurationWithWriteKey:@"ACIG3kwqCUsWZBfYxZDu0anuGwP3XtWW"];
+//        [config use:[SEGGoogleAnalyticsIntegrationFactory instance]];
+//        [SEGAnalytics setupWithConfiguration:config];
+//        [[SEGAnalytics sharedAnalytics] track:@"Test Google Analytics"];
+//        [[SEGAnalytics sharedAnalytics] flush];
         return true
     }
 

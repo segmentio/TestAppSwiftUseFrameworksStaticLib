@@ -47,7 +47,8 @@
       }
     },
     {
-      "name": "StaticLibWorkaround"
+      "name": "StaticLibWorkaround",
+      "preserve_paths": "Pod/Classes/**/*"
     }
   ]
 }
