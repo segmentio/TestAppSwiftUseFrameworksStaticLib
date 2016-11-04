@@ -1,0 +1,32 @@
+PODS:
+  - Analytics (3.5.2)
+  - GoogleAnalytics (3.17.0)
+  - GoogleIDFASupport (3.14.0)
+  - Segment-GoogleAnalytics/StaticLibWorkaround (1.1.4):
+    - Analytics (~> 3.0)
+
+DEPENDENCIES:
+  - Analytics
+  - GoogleAnalytics
+  - GoogleIDFASupport
+  - Segment-GoogleAnalytics/StaticLibWorkaround (from `https://github.com/segment-integrations/analytics-ios-integration-google-analytics.git`, branch `static-lib-workaround`)
+
+EXTERNAL SOURCES:
+  Segment-GoogleAnalytics:
+    :branch: static-lib-workaround
+    :git: https://github.com/segment-integrations/analytics-ios-integration-google-analytics.git
+
+CHECKOUT OPTIONS:
+  Segment-GoogleAnalytics:
+    :commit: 949be69bed37593515b2a80c1621dea6c6b8a894
+    :git: https://github.com/segment-integrations/analytics-ios-integration-google-analytics.git
+
+SPEC CHECKSUMS:
+  Analytics: 0bf6c9302dcde2bdd9fc410ef2685ad8a1c804dd
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleIDFASupport: aaf8c10bd429abb1c15349d5252244f5eda8ead1
+  Segment-GoogleAnalytics: bfc1df1cda4439e17d539f02c27c4fb44dda2cea
+
+PODFILE CHECKSUM: 98fab23f720058c1983ecdc7631602bf5660ec9c
+
+COCOAPODS: 1.1.0
